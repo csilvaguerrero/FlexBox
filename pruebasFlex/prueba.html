@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grow y Shrink</title>
+        <meta charset="UTF-8">
+        <link rel="styleSheet" href="estilosprueba.css" type="text/css">
+    </head>
+    <body>
+        <main>
+            <h2>
+                Grow sin usar (sobra espacio debido a que el contenedor es más ancho que la suma de las cajas)
+            </h2>
+            <div id="divSinGrow">
+                <div class="hijosDivSinGrow"></div>
+                <div class="hijosDivSinGrow"></div>
+                <div class="hijosDivSinGrow"></div>
+                <div class="hijosDivSinGrow"></div>
+            </div>
+            <h2>
+                Usando Grow (conseguimos, en este caso, que todo el espacio sobrante se le asignase al segundo contenedor)
+            </h2>
+            <div id="divCon1Grow">
+                <div class="hijosDivConGrow"></div>
+                <div class="hijosDivConGrow" id="contenedorGrow"></div>
+                <div class="hijosDivConGrow"></div>
+                <div class="hijosDivConGrow"></div>
+            </div>
+            <h2>Shrink sin usar (las cajas caen debido a que el ancho de los contenedores es mayor que el ancho principal)</h2>
+            <div id="divSinShrink">
+                <div class="hijosDivSinShrink"></div>
+                <div class="hijosDivSinShrink"></div>
+                <div class="hijosDivSinShrink"></div>
+                <div class="hijosDivSinShrink"></div>
+            </div>
+            <h2>Usando Shrink (conseguimos que todo el espacio que sobre se )</h2>
+            <div id="divCon1Shrink">
+                <div class="hijosDivConShrink" id="contenedorShrink"></div>
+                <div class="hijosDivConShrink"></div>
+                <div class="hijosDivConShrink"></div>
+                <div class="hijosDivConShrink"></div>
+            </div>
+            <h2>Justify-content: flex-end</h2>
+            <div id="divFlexEnd">
+                <div class="hijosConFlexEnd"></div>
+                <div class="hijosConFlexEnd"></div>
+                <div class="hijosConFlexEnd"></div>
+                <div class="hijosConFlexEnd"></div>                
+            </div>
+            <h2>JUSTIFY-CONTENT: CENTER</h2>
+            <div id="divFlexCenter">
+                <div class="hijosConFlexCenter"></div>
+                <div class="hijosConFlexCenter"></div>
+                <div class="hijosConFlexCenter"></div>
+                <div class="hijosConFlexCenter"></div>                
+            </div>
+        </main>
+    </body>
+</html>

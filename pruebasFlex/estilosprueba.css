@@ -1,0 +1,146 @@
+*{
+
+    padding: 0;
+    margin: 0;
+
+}
+
+h2{/*Título que describirá la situación de cada ejercicio*/
+
+    margin-top: 90px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+div#divSinGrow, #divCon1Grow{/*Aplicamos estilos a los contenedores principales*/
+
+    display: flex;
+    background-color: rgb(213, 219, 219);
+    width: 1000px;
+    height: 100px;
+    margin: auto;
+
+}
+
+/*Aplicamos estilos a las cajas que serán sometidas a las propiedades que vamos a probar*/
+div.hijosDivSinGrow, .hijosDivConGrow{
+
+    background-color: rgb(130, 182, 133);
+    margin: 10px;
+    width: 100px;
+    height: 70px;
+    
+
+}
+
+/****************************** FLEX-GROW ***********************/
+
+
+/*Aplicamos el valor por defecto de flex-grow, y observamos como todas las cajas se adaptan al contenido
+de igual manera y tamaño*/
+div#divConGrow > div, #divCon1Grow > div{
+
+    flex-grow: 1;
+
+}
+
+
+/*Todas las cajas tienen un valor por defecto de flex-grow de 1, mientras que este contenedor tiene asignado un valor
+de 3. Esto hará que la caja tome 3 particiones más de espacio que las demás.*/
+div#contenedorGrow{
+    
+    
+    flex-grow: 5;
+
+}
+
+/******************************* FLEX-SHRINK *************************************/
+
+/*Aplicamos estilo al contenedor en el que no se aplicará flex-shrink*/
+div#divSinShrink{
+
+    background-color: rgb(213, 219, 219);
+    width: 1000px;
+    height: 100px;
+    margin: auto;
+
+}
+
+/*Aplicamos estilo a los contenedores los cuales seran sometidos a las pruebas con flex-shrink*/
+div.hijosDivSinShrink{
+
+    margin: 5px;
+    display: inline-block;
+    width: 180px;
+    height: 70px;
+    background-color: rgb(130, 182, 133);
+    
+}
+
+
+/*Aplicamos estilo al que se le aplicará a sus elementos flex-shrink*/
+div#divCon1Shrink{
+
+    display: flex;
+    background-color: rgb(213, 219, 219);
+    width: 1000px;
+    height: 100px;
+    margin: auto;
+
+}
+
+div.hijosDivConShrink{
+
+    margin: 10px;
+    flex-shrink: 1;
+    display: inline-block;
+    width: 200px;
+    height: 70px;
+    background-color: rgb(130, 182, 133);
+
+}
+
+/*Aplicamos flex-shrink al primer contenedor, y visualmente se podrá visualizar la partición que se ejerce sobre
+el elemento respecto a los demás.*/
+div#contenedorShrink{
+
+   flex-shrink: 3;
+
+}
+
+
+/******************************** JUSTIFY-CONTENT *****************************/
+
+
+div#divFlexEnd{
+
+    background-color: rgb(213, 219, 219);
+    width: 1000px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+div#divFlexCenter{
+    background-color: rgb(213, 219, 219);
+    width: 1000px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+div.hijosConFlexEnd, .hijosConFlexCenter{
+
+    margin: 10px;
+    width: 100px;
+    height: 70px;
+    background-color: rgb(212, 112, 112);
+}
+
+
+
